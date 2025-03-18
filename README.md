@@ -55,7 +55,7 @@ Filled missing emails with 'unknown@example.com'.
 
 Created a job_level column based on job_title (e.g., Junior, Mid, Senior, Manager).
 
-## 📊 Tools & Technologies Used
+## 📊 Tools & Technologies
 Python 3
 
 Pandas Library
@@ -64,10 +64,18 @@ NumPy
 
 Jupyter Notebook
 
-# 📌 Output Highlights
+## 📌 Output Highlights
 
 Cleaned dataset with no duplicates or nulls in critical columns.
 email_domain, join_year, and job_level columns added.
 Correlation printed for salary vs. join year.
 Pivot table for salary aggregation.
 All handling for missing data, type conversion, and outlier removal completed.
+
+## ✅ Example Columns After Cleaning
+
+| employee_id | first_name | last_name | email              | email_domain      | department | job_title        | salary | join_date  | performance_score | join_year | job_level |
+|------------|-----------|----------|--------------------|-------------------|-----------|------------------|-------|-----------|-------------------|----------|----------|
+| 1001       | John      | Doe      | john.doe@gmail.com | gmail.com         | Sales     | Senior Manager    | 75000 | 2020-05-10 | 8                 | 2020     | Manager  |
+| 1002       | Unknown   | Unknown  | unknown@example.com| example.com       | IT        | Junior Developer  | 55000 | 2019-03-15 | -1                | 2019     | Junior   |
+
